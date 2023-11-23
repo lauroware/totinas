@@ -36,6 +36,23 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <style>
+      #clients {
+        padding: 80px 0;
+      }
+
+      .client-logos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        overflow-x: auto; /* Esto permitirá que haya un scroll horizontal si es necesario */
+      }
+
+      .client-logos img {
+        max-height: 50px; /* Ajusta el tamaño de acuerdo a tus necesidades */
+        margin: 0 20px; /* Espaciado entre logos */
+      }
+    </style>
   </head>
 
   <body>
@@ -459,6 +476,22 @@
 
   
       </section>
+
+      <section id="clients" class="clients">
+        <div class="container">
+          <div class="section-title">
+            <span>Nuestros Clientes</span>
+            <h2>Clientes Satisfechos</h2>
+          </div>
+          <div class="client-logos">
+            <img src="assets/img/saba.jpg" alt="Logo Cliente 1" />
+            <img src="ruta_cliente_2.png" alt="Logo Cliente 2" />
+            <!-- Agrega más logos según sea necesario -->
+          </div>
+        </div>
+      </section>
+
+      
 
     <!-- ======= Footer ======= -->
     <footer id="footer">
