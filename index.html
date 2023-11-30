@@ -40,17 +40,28 @@
     <!-- Template Main CSS File -->
     <style>
       /* Estilos para los botones de WhatsApp e Instagram */
-      .social-links a {
-        font-size: 24px; /* Tamaño de fuente más grande */
-        color: black; /* Color negro */
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* Espacio entre los íconos, ajusta según sea necesario */
       }
+
+      .social-links a {
+        font-size: 30px; /* o cualquier tamaño que prefieras */
+        color: black;
+      }
+
       .social-links a:hover {
         color: #25d366; /* Color de WhatsApp al pasar el mouse */
       }
-      .social-links a:nth-child(2):hover {
-        color: #e4405f; /* Color de Instagram al pasar el mouse */
+
+      .social-links a:nth-child(3):hover {
+        color: #0077b5; /* Color de LinkedIn al pasar el mouse */
       }
 
+      .social-links a:nth-child(4):hover {
+        color: #e4405f; /* Color de Instagram al pasar el mouse */
+      }
       /* Estilos para centrar todo el contenido */
       body,
       html {
@@ -137,6 +148,18 @@
           data-aos-delay="300"
           >Tienda Online</a
         >
+        <br />
+        <br />
+        <div class="social-links">
+          <!-- Iconos de WhatsApp, LinkedIn e Instagram -->
+
+          <a
+            href="https://www.linkedin.com/company/101255316/admin/feed/posts/"
+            class="linkedin"
+          >
+            <i class="bx bxl-linkedin"></i>
+          </a>
+        </div>
         <div class="social-links">
           <!-- Iconos de WhatsApp e Instagram -->
           <a href="https://wa.me/5491160336862" class="google-plus"
