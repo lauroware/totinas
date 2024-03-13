@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Información de la mascota</title>
+    <style>
+      /* Estilos generales */
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+        background-image: url("https://img.freepik.com/vector-premium/fondo-kawaii-perro-gato_6997-1578.jpg?w=740");
+        background-size: cover;
+      }
+
+      /* Estilos para las cajas */
+      .info-box {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.9
+        ); /* Color de fondo semitransparente */
+      }
+      /* Estilos para imágenes dentro de los info-box */
+      .info-box img {
+        max-width: 100%; /* Hace que la imagen se escale para ajustarse al ancho del contenedor */
+        height: auto; /* Mantiene la proporción de aspecto de la imagen */
+      }
+
+      /* Estilos para el título */
+      h1 {
+        color: blue;
+        padding: 10px;
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.7
+        ); /* Color de fondo semitransparente */
+        border-radius: 5px;
+      }
+
+      h2 {
+        color: green;
+      }
+
+      /* Media query para hacer la página responsive */
+      @media (max-width: 600px) {
+        body {
+          padding: 10px;
+        }
+      }
+
+      /* Estilos para el mapa */
+      .map-container {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%; /* Proporción de aspecto 16:9 (divide la altura por el ancho y multiplica por 100) */
+      }
+
+      .map-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      /* Estilos para el footer */
+      footer {
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.7
+        ); /* Color de fondo semitransparente */
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Información de la mascota</h1>
+
+    <!-- Nombre de la mascota -->
+    <div class="info-box">
+      <h2>Nombre de la mascota</h2>
+      <p>Oliver</p>
+    </div>
+
+    <!-- Foto de la mascota -->
+    <div class="info-box">
+      <h2>Foto de la mascota</h2>
+      <img
+        src="https://i.postimg.cc/PxcVRcQS/photo-2024-03-13-15-10-10.jpg"
+        alt="Foto de Armin"
+      />
+    </div>
+
+    <!-- Edad de la mascota -->
+    <div class="info-box">
+      <h2>Edad</h2>
+      <p>8 años (Nacimiento Septiembre 16)</p>
+    </div>
+
+    <div class="info-box">
+      <h2>Sobre su comportamiento</h2>
+      <p>Sociable pero no acostumbrado a tratar con niños</p>
+    </div>
+
+    <!-- Alimento de la mascota -->
+    <div class="info-box">
+      <h2>Alimento de la mascota</h2>
+      <p>Carne, frutas y verduras y comida balanceadas.</p>
+    </div>
+
+    <!-- Medicamentos -->
+    <div class="info-box">
+      <h2>Medicamentos - Historia clínica</h2>
+      <p>Nada</p>
+    </div>
+
+    <!-- Castrado -->
+    <div class="info-box">
+      <h2>No Castrado</h2>
+      <p></p>
+    </div>
+
+    <!-- Dirección del dueño -->
+
+    <div class="info-box">
+      <h2>Nombre del dueño</h2>
+      <p>Lauro Ware</p>
+    </div>
+    <div class="info-box">
+      <h2>Dirección del dueño</h2>
+      <p>Artigas 1553 dto b</p>
+    </div>
+
+    <!-- Teléfono del dueño con enlace a WhatsApp -->
+    <div class="info-box">
+      <h2>Teléfono del dueño</h2>
+      <p><a href="https://wa.me/005491162366175">1162366175</a></p>
+    </div>
+
+    <!-- Mapa -->
+    <div class="info-box">
+      <h2>Mapa</h2>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.6434001206303!2d-58.47524062478077!3d-34.613177772950934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9fa9984ef11%3A0xcfb18f33ef5a7de3!2sGral.%20Jos%C3%A9%20Gervasio%20Artigas%201553%20dto%20b%2C%20C1416AKK%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1710353685276!5m2!1ses-419!2sar"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      Desarrollado por
+      <a href="https://lauroware.github.io/portfolio/">Lauro Ware</a>
+    </footer>
+  </body>
+</html>
