@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Información de la mascota</title>
+    <style>
+      /* Estilos generales */
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+        background-image: url("https://img.freepik.com/vector-premium/fondo-kawaii-perro-gato_6997-1578.jpg?w=740");
+        background-size: cover;
+      }
+
+      /* Estilos para las cajas */
+      .info-box {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.9
+        ); /* Color de fondo semitransparente */
+      }
+      /* Estilos para imágenes dentro de los info-box */
+      .info-box img {
+        max-width: 100%; /* Hace que la imagen se escale para ajustarse al ancho del contenedor */
+        height: auto; /* Mantiene la proporción de aspecto de la imagen */
+      }
+
+      /* Estilos para el título */
+      h1 {
+        color: blue;
+        padding: 10px;
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.7
+        ); /* Color de fondo semitransparente */
+        border-radius: 5px;
+      }
+
+      h2 {
+        color: green;
+      }
+
+      /* Media query para hacer la página responsive */
+      @media (max-width: 600px) {
+        body {
+          padding: 10px;
+        }
+      }
+
+      /* Estilos para el mapa */
+      .map-container {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%; /* Proporción de aspecto 16:9 (divide la altura por el ancho y multiplica por 100) */
+      }
+
+      .map-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      /* Estilos para el footer */
+      footer {
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.7
+        ); /* Color de fondo semitransparente */
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Información de la mascota</h1>
+
+    <!-- Nombre de la mascota -->
+    <div class="info-box">
+      <h2>Nombre de la mascota</h2>
+      <p>Oliver</p>
+    </div>
+
+    <!-- Foto de la mascota -->
+    <div class="info-box">
+      <h2>Foto de la mascota</h2>
+      <img
+        src="https://i.ytimg.com/vi/uQOew1EXmR4/hqdefault.jpg"
+        alt="Foto de Armin"
+      />
+    </div>
+
+    <!-- Edad de la mascota -->
+    <div class="info-box">
+      <h2>Edad</h2>
+      <p>7 años (Nacimiento Junio 2017)</p>
+    </div>
+
+    <div class="info-box">
+      <h2>Sobre su comportamiento</h2>
+      <p>Es muy bueno, pero no está acosumbrado a socializar</p>
+    </div>
+
+    <!-- Alimento de la mascota -->
+    <div class="info-box">
+      <h2>Alimento de la mascota</h2>
+      <p>Balanceado, carnes y verduras</p>
+    </div>
+
+    <!-- Medicamentos -->
+    <div class="info-box">
+      <h2>Medicamentos - Historia clínica</h2>
+      <p>Problemas de piel y vista, no toma medicamentos.</p>
+    </div>
+
+    <!-- Castrado -->
+    <div class="info-box">
+      <h2>Castrado</h2>
+      <p>No</p>
+    </div>
+
+    <!-- Dirección del dueño -->
+
+    <div class="info-box">
+      <h2>Nombre del dueño</h2>
+      <p>Lauro Ware</p>
+    </div>
+    <div class="info-box">
+      <h2>Dirección del dueño</h2>
+      <p>Artigas 1553 Dto B</p>
+    </div>
+
+    <!-- Teléfono del dueño con enlace a WhatsApp -->
+    <div class="info-box">
+      <h2>Teléfono del dueño</h2>
+      <p><a href="https://wa.me/00541162366175">1562366175</a></p>
+    </div>
+
+    <!-- Mapa -->
+    <div class="info-box">
+      <h2>Mapa</h2>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3341.1271082519784!2d-58.29163719999999!3d-33.13202510000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a54ddb4cb64efb%3A0x9c58fa8b06c53adb!2sJacaranda%202405%2C%2065000%20Fray%20Bentos%2C%20Departamento%20de%20R%C3%ADo%20Negro%2C%20Uruguay!5e0!3m2!1ses-419!2sar!4v1710297869728!5m2!1ses-419!2sar"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      Desarrollado por
+      <a href="https://lauroware.github.io/portfolio/">Lauro Ware</a>
+    </footer>
+  </body>
+</html>
